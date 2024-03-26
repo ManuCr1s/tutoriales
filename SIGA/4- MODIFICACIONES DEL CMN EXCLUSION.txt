@@ -1,0 +1,42 @@
+INGRESAR 
+	PROGRAMACION
+	MODIFICACION DE C.M.N	
+		
+NOTA: Las modificaciones se pueden dar por 3 motivos solo para bienes:
+	- INCREMENTA O DISMINUYE LA CANTIDAD
+	- INCLUYE NUEVOS ITEMS
+	- EXCLUYE NUEVOS TIEMS
+NOTA: Las modificaciones se pueden dar por 2 motivos solo para servicios:
+	- INCLUYE NUEVOS ITEMS
+	- EXCLUYE NUEVOS TIEMS
+
+EXCLUIR UN ITEM DEL CUADRO MULTIANUAL DE NECESIDADES
+		STEP N° 1
+		- El item no deberia tener registro del CMN actualizado,si en caso estuviera coordinar con abastecimiento 
+		para modificar ese cmn actualizado.
+		- Una vez que abastecimiento hizo la desahabikitacion.
+		- Hacmos click derecho y ponemos EXLCUIR ITEM.
+		- Una vez desabilitado en la columna SEL/SOL se habilitara la casilla para gestionar Solicitud.
+		- Terminado eso hacemos clikc en e boton GENERAR SOLICITUD.
+		- En la glosa ponemos modificacion del CMN
+
+		STEP N° 2
+		-Nos vamos de nuevo al menu de MODIFICACION DE CMN y hacemos click en SOLICITUD DE MODIFICACION
+		-Seleccionamos la solicitud y le damos click en  VISTO BUENO.
+		-Se envia a la oficina de abastecimiento.
+		-Pero todavia no se podra geerar pedido porque esta a la espera de su aprobacion.
+	
+Podemos revertir exlucion antes de generar la solicitud coj lcik derecho reverit exclusion, 
+tener en cuenta que el item no debe estar en un pedido tenemos que leiminar
+
+PASO PARA EL AREA DE ABASTECIMIENTO
+	- INGRESAR 
+		--PROGRAMACION
+		--CONSOLIDADO DEL C.M.N
+		--CONSOLIDADO DEL CMN ACTUALIZADO
+
+	-El CMN no debieria de estar certificado.
+	-Cambiar estado a de pendiente a Ajuste x CCMN Y hacemos click en la carpeta amarilla
+	- Sleccionamos el item y le damos clik derechor a aleiminar item
+
+

@@ -1,0 +1,19 @@
+/* ----------------------------	 ACTIVIDADES EN EL SIGA  ----------------------------*/
+--STEP 1
+		-Entramos al SIGA con el usuario (SIGA - Hmpp2023).
+		-Vamos a MAESTROS y despues a DATOS GENERALES.
+		-En DATOS GENERALES, nos vamos a ACTIVIDADES OPERATIVAS. 
+		-Nos desplazmos hasta la parte final y damos click derecho y ponemos
+		INSERTAR ACTIVIDAD OPERATIVA
+		-Ponemos X para todo tipo de uso.
+
+--STEP 2
+		-Salimos y entramos a CENTRO DE COSTOS
+		-Seleccionamos el CENTRO DE COSTO y damos click en la carpetita
+		-En el medio veremos las METAS  y en la parte inferior ACTIVIDADES
+		-Seleccionamos que meta o rubro agregar la ACTIVIDAD.
+		-Salimos y en la parte superior ponemos CARGA DE ACTIVIDAD OPERATIVA
+		-En la primera parte seleccionamo el CENTRO DE COSTO
+		-En la segunda parte seleccionamos la ACTIVIDAD OPERATIVA
+		-En la tercera parte selccionamos la META OPERATIVA a la cual asignar
+		- Y ponemos guardar

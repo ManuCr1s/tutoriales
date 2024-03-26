@@ -1,0 +1,48 @@
+													INSTALAR SSH EN SERVER Y A UN CLIENTE
+INSTALACION A UN CLIENTE
+STEP N ° 01.- Instalacion de SSH en servidor
+	-- Linea de comandos:
+				sudo aptitude install openssh-server
+
+	-- Verificar estado del comando shh:
+				sudo service sshd status
+
+	-- Si no esta activo ponemos el comando:
+				sudo service sshd start
+
+
+STEP N° 02.- Configuracion de puerto de 22 a 443
+	-- Dirigirnos al directorio 
+				cd /etc/ssh/
+	
+	--Configuramos el archivo SSHD_CONFIG
+				sudo nano sshd_config
+
+	-- Configuramos el puerto en la linea:
+				#Port 22  (por defecto) a Port 443
+					 CRTL O (guardar) Y CRTL X (salir)
+	
+	-- Para que se gurade los cambios realizados ponemos:
+			sudo service sshd restart
+
+STEP N° 03..- Generar la llave SSH, para agregar a los clientes que sean seguros par anuetsro servidor
+	-- Ponemos el siguiente comando
+				ssh-keygen
+
+	--Volvemos al home con cd.
+
+	-- Y nos dirigimos a la siguiente ruta
+				cd /home/nombreusuario/.ssh/
+
+	-- Y listamos con ls  y apareceran dos files.
+				id_rsa id_rsa.pub
+
+	-- Generamos las keys con :
+				touch authorized_keys 
+
+INSTALACION A UN CLIENTE
+STEP N° 01.- Generar la llave del servidor cliente 
+	--  ssh-keygen
+
+
+

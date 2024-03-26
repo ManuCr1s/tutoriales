@@ -1,0 +1,24 @@
+						WINDOWS SERVER
+1.- COPIA DE SEGURIDAD 
+	-- Nos vamos a HERRAMIENTAS y luego COPIA DE SEGURIDAD DE WIDNOWS SERVER
+	-- Sino esta instalada, nos vamos a AGREGAR ROLES y CARACTERISTICAS
+	 
+	INSTALAR COPIA DE SEGURIDAD
+		-- Nos vamos hasta CARACTERISTICAS
+		-- Y seleccionamos COPIA DE SEGURIDAD WINDOWS SEREVER
+		-- Luego escribimos SIGUIENTE 
+		-- Luego le damos en FINALIZAR
+
+2.- REALIZAR COPIA DE SEGUIRDAD
+	-- Nos vamos a HERRAMIENTAS y luego COPIA DE SEGURIDAD DE WIDNOWS SERVER
+	-- Se abre una ventana y buscamos en la barra lateral izquierda
+		-- Y le damos clic en COPIA DE SEGUIRDAD LOCAL
+		-- Y seleccionamos HACER UNA COPIA DE SEGUIRDAD UNA VEZ
+		-- Seleccionamos SERVIDOR COMPLETO. 
+		-- Especificamos el lugar de alamacenamiento y ya
+
+3.- RESTAURAR COPIA DE SEGURIDAD WINDOWS SEERVER
+	-- Nos vamos a HERRAMIENTAS y luego COPIA DE SEGURIDAD DE WIDNOWS SERVER
+	-- Se abre una ventana y buscamos en la barra lateral izquierda
+		-- Le damos clic en RECUPERAR
+		-- Si hay fechas lo buscamos y SIGUIENTE

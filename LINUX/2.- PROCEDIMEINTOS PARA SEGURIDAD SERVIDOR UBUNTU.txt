@@ -1,0 +1,8 @@
+Reglas 1
+	1) Tener actualizado los paquetes.
+	2) Creacion de usuario con contraeña fuerte y seguro (C3r0P4p3lnu3v0.) -> COMANDO: adduser nombreusuario, passwd nombreusuario
+	3) Agregar el usuario al grupo de los super-usuarios -> COMANDO: sudo usermod -aG sudo nombreusuario
+	4) Si se puede ejecutar procesos con el nuevo usuario, bloqueasmo las contraeña del root -> COMANDO: sudo passwd -l root
+Regla 2
+	1) Asegurar el SSH -> COMANDO: ssh-keygen -t ed25519
+	2)

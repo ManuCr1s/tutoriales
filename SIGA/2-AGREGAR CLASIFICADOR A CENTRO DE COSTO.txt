@@ -1,0 +1,25 @@
+/* ----------------------------	 AGREAGAR CLASIFICADOR A CENTRO DE COSTO  ----------------------------*/
+--STEP 1
+		-Entramos al SIGA con el usuario (SIGA - Hmpp2023).
+		-Vamos a MAESTROS y despues a CENTROS DE COSTO.
+		-En CENTRO DE COSTO, nos vamos a la CARPETITA. 
+		-Vemos todas las metas y vemos en PROD/PRY si es 3999999 
+		  es una actividad pero si es distinto es un proyecto sera distinto.
+
+--STEP 2 (OPCIONAL)
+		-Si es un proyecto nos vamos a MODULO DE LOGISTICA.
+		-Y desglozamos TABLAS y nos vamos a DATOS GENERALES 
+		y despues a CLASIFICADOR POR PROYECTO.
+		-Seleccionamos el proyecto y nos vamos a la CARPETITA.
+		-Seleccionamos el clasificador que se requiera.
+
+--STEP 2(OPCIONAL)
+		-Si es del item nos vamos a MAESTROS y CATALOGO DE BIENES y 
+		 SERVICIOS.
+		-Buscamos si es SERVICIO O SUMINISTRO y lo buscamos,
+		-Damos click en la CARPETITA y nos fijamos en la seccion CLASIFICADOR DE GASTO
+		-Si no hay el clasificador nos vamos a la ventana CLASIFICADOR/CUENTA
+		-Buscamos por GRUPO, CLASE y FAMILIA vamos a estado inactivo y nos fijamos
+		en las dos columnas de al lado y si estan ACTIVOS o INACTIVOS.
+		-Si estan A en las columnas del costado, quiere decir que podemos activar sino no.
+

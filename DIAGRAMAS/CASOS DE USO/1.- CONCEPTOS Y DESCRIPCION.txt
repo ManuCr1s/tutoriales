@@ -1,0 +1,47 @@
+										DIAGRAMA DE CASOS DE USO 	
+Se utiliza para reunir los requisitos de uso de un sistema sus principales objetivis son:
+- Identificarlas funciones y la forma en que los roles interactúan con ellas
+- Para una visión de alto nivel del sistema.- Funcionalidad del sistema.
+- Identificar los factores internos y externos.- 
+
+Los diagramas de caso de uso consisten en 4 objetos.
+- Actor.- Cualquier entidad que desempeñe un papel en un sistema determinado.
+- Caso de uso.- Representa una función o una acción dentro del sistema(Son los objetivos que va a lograr el actor con el sistema).
+- Sistema.- Defini el alcance del caso de uso y se dibuja como un rectángulo.
+- Paquete.- Se utilizan para agrupar los casos de uso.
+
+Dependencia Include
+- El caso invocador depende del caso de uso incluido para completar su accion
+- El caso inlcuido simpre se coloca a la derecha del invocador
+- El invocador es dependiente del incluido.
+- La flecha nace del invocador y termina en el incluido.
+
+Dependencia Extend
+- Indica dependencia opcional entre dos casos de uso.
+- Extiende el comporatamiento de la base adiciona pasos extras.
+- La extension se coloca a bajo de la base.
+- O sea que la base puede realizar su objetivo sin la extension o en otros casos con la extension
+- la extension simpre va en el inferior de la base y la flecha nace de la extension a la base
+
+Generalizacion o dependencia
+- El hijo tiene cosas en comun con el padre, pero adiciona
+su porpia forma de trabajo.
+- La generalizacion va sin flechas punteadas y va desde el herditario
+al heredado.
+
+
+Asociaciones de diagramas de casos de uso.
+Hay cinco tipos de relaciones en un diagrama de casos de uso, son:
+- Asociación entre un actor y un caso de uso
+- Generalización de un actor
+- Ampliar la relación entre dos casos de uso
+- Incluir la relación entre dos casos de uso
+- Generalización de un caso de uso
+
+
+TEST WAVE
+- W .- El caso de uso describe que hacer y no como hacer.
+- A .- El caso de uso esta escrito desde la perspectiva del actor.
+- V .- El caso incluye valor para el actor.
+- E .- Es el flujo de eventos un Escenario completo
+

@@ -1,0 +1,47 @@
+INGRESAR 
+	PROGRAMACION
+	MODIFICACION DE C.M.N
+		
+NOTA: Las modificaciones se pueden dar por 3 motivos solo para bienes:
+	- INCREMENTA O DISMINUYE LA CANTIDAD
+	- INCLUYE NUEVOS ITEMS
+	- EXCLUYE NUEVOS TIEMS
+NOTA: Las modificaciones se pueden dar por 2 motivos solo para servicios:
+	- INCLUYE NUEVOS ITEMS
+	- EXCLUYE NUEVOS TIEMS
+
+PARA MODIFICAR EL CMN, SE REALIZA LO SIGUIENTE:
+	STEP N° 1
+		-Hacemos click en el archivo amarillo donde se ve el CMN multianual.
+		-Ahi podemos modificar las cantidadees y guardar en el disket.
+		-Una vez guardado y modificado se hablilitara la casilla en la columna (SEL SOL.)
+		-Y el boton Generar Solicitud, en la glosa ponemos el motivo de la modificacion.
+
+	STEP N° 2
+		-Nos vamos de nuevo al menu de MODIFICACION DE CMN y hacemos click en SOLICITUD DE MODIFICACION
+		-Seleccionamos la solicitud y le damos click en  VISTO BUENO.
+		-Se envia a la oficina de abastecimiento.
+		-Pero todavia no se podra geerar pedido porque esta a la espera de su aprobacion.
+
+CUANDO LOS SALDOS SON NEGATIVOS
+		-Nose podra modificar el cmn por ningun motivo.
+		-Tendremos que notificar al area de presupuesto una modificacion del amrco presupuestal.
+		
+CARGA DE NUEVOS ITEMS
+		STEP N° 1
+		- Nos vamos a modificacion del CMN y buscamos el boton CARGA DE DATOS.
+		- Seleccionamos la fuente, meta y actividad operativa 
+		- Abajo en descripcion buscamos el item, ingresmaos la cantidad y guardamos
+		- Un vez guardado; en la columna Inc/Excl, se pondra una (I)
+		- Seleccionamos; en la columna Sel/Sol y presinamos GENERAR SOLICITUD.
+		
+		STEP N° 2
+		-Nos vamos de nuevo al menu de MODIFICACION DE CMN y hacemos click en SOLICITUD DE MODIFICACION
+		-Seleccionamos la solicitud y le damos click en  VISTO BUENO.
+		-Se envia a la oficina de abastecimiento.
+		-Pero todavia no se podra geerar pedido porque esta a la espera de su aprobacion.
+
+VERFICIAR EN QUE CLASIFICADOR DE GATOS TENGO SALDO DISPONIBLE
+		- Voy a GESTION PRESUPUESTAL y a MARCO PRESUPUESTAL.
+		- Seleccionamos la meta o fuente de financiamiento 
+		- Y buscamos las columnas Marco Prstal y Saldo Pptal  

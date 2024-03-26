@@ -1,0 +1,28 @@
+									COMANDOS PARA LINUX
+
+-- COMANDOS PARA CONEXION
+	EJEMPLOS:
+		-- SSH.- Acceso a un servidor por ssh,ofrece comunicación encriptada y segura entre dos 
+		  sistemas sobre una red no segura (es un reemplazo rlogin, rsh y rcp).
+				
+						 COMANDO:
+								SSH NOMBRE_USUARIO@DIRECCION_IP
+
+		-- UPGRADE.- Solo cuando exista actualizaciones, de paquetes.
+		-- DIST-UPGRADE.-  Eliminaras o instalaras paquetes de forma inteligente.
+	
+						COMANDO:
+								SUDO APTITUDE DIST-UPGRADE 
+
+		--REBOOT.- Reinicia la maquina, porque algunas aplicaciones necesitan de reiniciarse
+
+						COMANDO
+								REBOOT es equivalente a SHUTDOWN -r NOW
+
+		--SHUTDOWN.- Apaga el equipo y no lo vuelve a arrancar.
+
+						COMANDO 
+								SHUTDOWN -h NOW
+
+
+                                    

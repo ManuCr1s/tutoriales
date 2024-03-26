@@ -1,0 +1,62 @@
+INSTALACION DE CERTIFICADO SSL EN XAMPP
+
+OBTENCION DEL CERTIFICADO SSL
+	STEP N° 1
+
+		--Iniciamos sesion en zero ssl (https://zerossl.com/?fpr=search&gclid=EAIaIQobChMI46yBtIeRgAMVYehcCh35BgKnEAAYASAAEgIRjvD_BwE).
+		Usuario:mcristobaln@outlook.com
+
+		--Vamos al apartado de nuevo certificado e ingresamos el dominio completo del cual queremos tener el certificado.(pladig.munipasco.gob.pe).
+		--Escogemos 90 dias de plazo, para nuestro certificado.
+		--Dejamos por defecto el Auto-Generate CSR seleccionado.
+		--Dejamos seleccioonado por defecto el gratuito.
+
+	STEP N°2
+
+		--Ingresamos un correo del dominio para su comprobacion. tambien puede ser por DNS
+		--Pulsamos en verificaion de dominio.
+		--Del correo que nos enviaron seleccionamos el codigo de verificacion y lo copiamos en el link que dice GO TO VERIFICACTIONPAGE
+		--Por ultimo actualizamos la pagina del zeroSSL
+
+	STEP N°3
+
+		--Hacemos click en INSTALL CERTIFICATE
+		--Ponemos formato predeterminado  y descargamos el DONWLOAD CERTIFICATE.ZIP
+		--Se descargaran tres archivos
+
+
+INSTALACION EN XAMPP
+
+	STEP N°1
+		--Vamos al archivo HOSTS (Ubicado en: c:/windows/System32/drivers/etc)
+		--Escribimos en el archivo lo siguiente: 127.0.0.1 pladig.munipasco.gob.pe #PRUEBA SSL
+		--Luego vamos a la carpeta de apache (UBICADO en: c:/xampp/apache/conf), ahi creamos una carpeta, ahi se copiara los tres archivos
+		--Buscamos en el CAMPP-CONTROL el archivo httpd-ssl.conf
+		--Bajamos en el archivo hasta: <VISTUALHOST _default_:443/>
+			--En la primera parte ponemos:
+				#   General setup for the virtual host
+				DocumentRoot "C:/xampp/htdocs/sistema_qr_muni-master/public"
+				ServerName sistematransporte.munipasco.gob.pe:443 ----------------aqui seria ----------------- pladig.munipasco.gob.pe:443
+				ServerAdmin informaticasistemas@email.munipasco.gob.pe 
+				ErrorLog "C:/xampp/apache/logs/error.log"
+				TransferLog "C:/xampp/apache/logs/access.log"
+		
+		--Buscamos server certificate
+			-- ponemos la siguiente linea de codigo o sea la conexion a la carpeta de nuestrocertificado
+				SSLCertificateFile "conf/ssl/certificate.crt"
+	
+		--Buscamos server private key
+			--ponemops la siguiente linea de codigo o sea la conexion a la carpeta de nuestra clave privada
+				SSLCertificateKeyFile "conf/ssl/private.key"
+
+		--Buscamos server chain
+			-- ponemos la siguiente linea de codigo o sea la conexion a la carpeta de la autorida de certificacion
+				SSLCertificateChainFile  "conf/ssl/ca_bundle.crt"
+
+		--Lo guardamos esto todo se hace sin prender el xampp, ya que iniciaremos y volverenos a reiniciar los servicios.
+
+SALIDA MIKROTIK
+	
+	STEP N°1
+		--
+	

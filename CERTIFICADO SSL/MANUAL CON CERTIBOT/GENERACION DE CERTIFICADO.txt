@@ -1,0 +1,11 @@
+														Creacion de Certificados SSL
+
+-- STEP N° 1.- Instalamos en nuestro server CERTBOT, escogiendo el tipo de servidor y el sistema operativo en el siguiente enlace:
+					https://certbot.eff.org/
+
+-- STEP N° 2.- Despues de instalar abrimos un CMD en modo administrador y ejecutamos el siguiente comando 
+				certbot certonly 
+
+					-- Despues de ejecutado nos pedira que ingresemos parametros:
+							-- En el primero es 2 y enter
+							-- En el segundo es el DOMINIO (pladig.munipasco.gob.pe)
