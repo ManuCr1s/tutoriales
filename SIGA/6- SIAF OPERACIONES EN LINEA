@@ -1,0 +1,26 @@
+                            SIAF OPERACIONES EN LINEA
+1.- CREACION DE USUARIOS DE ACCESO AL MODULO
+        ->STEP 1
+                -- Ingresamos al siguiente link (https://apps4.mineco.gob.pe/siafadmapp/login)
+                -- Seleccionamos al modulo de ADMINISTRADOR DE USUARIOS.
+                -- Se despliega en la barra izquierda el ADMINISTRADOR DE USUARIOS y accedemos en el submenu, 
+                    Usuarios.
+                -- Aparecera un formulario de dos bloques en el primer bloque se crean los usuarios y en el 
+                segundo bloque se lista, los modulos a los que tiene acceso el usuario seleccionado en la 
+                parte superior.
+                -- Cuando demos click en NUEVO USUARIO se desplegara un formulario de 3 bloques, en la primera 
+                datos personales con el numero de DNI(se termina de ingresar el dni y ponemos ENTER), abajo 
+                seleccionamos el area, el cargo, el telefono, el anexo, el email
+                --Para darle modulos al usuario creado en la parte inferior damos click en estado y aceptamos
+                que por defecto se seleccionara.
+                -- Cuando seleccionemos los modulos se habiltara un boton de 9 puntos, le daremos click y tambien
+                seleccionaremos la parte de operacion.    
+                --Si en caso no ingresa, podemos habilitar cualquiera de estos otros modulos (Administrativo,
+                Estimacion de Ingresos, Presupuestal Pliego).
+                -- Para la aprobacion del cuadro multianual de necesidades seleccioanmos los modulos:
+                        ->Plataforma SIAF-SIGA - Modulo de Configuracion
+                        ->Plataforma SIAF-SIGA - Modulo de Programacion 
+
+        ->STEP 2
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo CMN SIAF RP
