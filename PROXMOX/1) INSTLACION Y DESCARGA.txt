@@ -1,0 +1,36 @@
+												INSTALACION
+1) Instalar la ISO en un USB O CDROM booteable
+2) Pasos para la instalacion:
+	STEP N° 1: Instalacion del programa.
+		- Install Proxmox VE
+		- Aceptamos la licencia
+		- Seleccionamos todos los discos del servidor
+		- Poner la ip fija
+		
+	STEP N° 2: Nos conectamos por la IP asiganda y su puerto desde un navegador
+		- Actualizamos los paquetes dentro del contenedor PROXMOX, con usuairio y contraseña.
+		- Utilizamos los comandos apt-get update
+		- Utilizamos el comando apt-get dist-upgrade y ponemos y
+		- 
+	
+	STEP N° 3: Creacion de un cluster con comandos:
+		- pvecm create Cluster (Creacion deun cluster en PROXMOX)
+		- pvecm status (Ver el estado de la maquina virtual)
+		- para conectar otro servidor al cluster.
+			- Nos conectamos mediante ssh al otro servidor 
+			- Y ejecutamos el siguiente comando:
+				-- pvecm add ip_del_primer_servidor_el_genero _el_cluster
+
+	STEP N° 4: Creacion de discos de almacenamiento de fisico a virtuales:
+		- Hacemos click en el servidor y luego en el Shell, utilizamos los siguientes comandos:
+			-- fdisk -l (Podemos ver todos los discos que tenmos uy sus particiones)
+			-- cfdisk /dev/sdd 
+		- Hacemos click en Datacenter y luego a STORAGE y nos vamos ADD .
+		- Hacemos click en New -> Y ponemos el cantidad del peso.
+		- Hacemos click en Write -> Y ponemos en yes.
+		
+
+		- Utilizamos el vg-create y pv-create (el segudno crea un volumen y sus particiones y el primero crea un grupo de volumnes)
+			- Con el primero pv-create /dev/sdd1 y se guarda.
+			- Luego para crear un grupo con el comando vg-create Disco500Gv /dev/sdd1 
+	STEP N° 5: 
