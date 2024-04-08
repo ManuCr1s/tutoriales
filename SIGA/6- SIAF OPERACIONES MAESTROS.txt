@@ -1,0 +1,174 @@
+                            SIAF OPERACIONES MAESTROS
+1.- CREACION DE USUARIOS DE ACCESO AL MODULO
+        ->STEP 1
+                -- Ingresamos al siguiente link (https://apps4.mineco.gob.pe/siafadmapp/login)
+                -- Seleccionamos al modulo de ADMINISTRADOR DE USUARIOS.
+                -- Se despliega en la barra izquierda el ADMINISTRADOR DE USUARIOS y accedemos en el submenu, 
+                    Usuarios.
+                -- Aparecera un formulario de dos bloques en el primer bloque se crean los usuarios y en el 
+                segundo bloque se lista, los modulos a los que tiene acceso el usuario seleccionado en la 
+                parte superior.
+                -- Cuando demos click en NUEVO USUARIO se desplegara un formulario de 3 bloques, en la primera 
+                datos personales con el numero de DNI(se termina de ingresar el dni y ponemos ENTER), abajo 
+                seleccionamos el area, el cargo, el telefono, el anexo, el email
+                --Para darle modulos al usuario creado en la parte inferior damos click en estado y aceptamos
+                que por defecto se seleccionara.
+                -- Cuando seleccionemos los modulos se habiltara un boton de 9 puntos, le daremos click y tambien
+                seleccionaremos la parte de operacion.    
+                --Si en caso no ingresa, podemos habilitar cualquiera de estos otros modulos (Administrativo,
+                Estimacion de Ingresos, Presupuestal Pliego).
+                -- Para la aprobacion del cuadro multianual de necesidades seleccioanmos los modulos:
+                        ->Plataforma SIAF-SIGA - Modulo de Configuracion
+                        ->Plataforma SIAF-SIGA - Modulo de Programacion 
+
+        ->STEP 2
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+
+
+2.- Progrmacion del cuadro multianual de necesidades   
+        ->STEP 1 (AGREGAR ITEM)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras 
+                -- Seleccionamos Catalogo Institucional  BSO
+                -- Para agregar un Item, Servicio damos click en el +
+                -- Y se agrega por intuacion a la interfaz
+        ->STEP 2 (CLASIFICADOR DE GASTO)
+                -- Agregar clasificador de gasto a un item
+                -- Nos fijamos en los cuatro botones que van al lado del nombre de CATALOGO INSTITUCIONAL DE BIENES, SERVICIOS Y OBRAS (Eliminar, Ver, Catalogo de Precios, Clasificador)
+                -- Seleccionamos el ultimo boton de clasificador, al realizar click se desplegara un formulario con los datos del item (año, grupo, familia, etc) y un listado en el que 
+                se visualiza todos los posibles clasificadores de gasto y en la columna ESTADO(hacemos click en INACTIVO) y aparecera un POP UP para confirmar y se confirma.
+                
+        ->STEP 3 (CATALOGO DE PRECIO)
+                -- Seleccionamos el boton de Catalogo de Precio
+                -- Solo se importa de un archivo predeterminado
+                -- Buscamos un archivo, que se genera de dos maneras
+                        --PRIMERA MANERA
+                                --Ingresamos al SIGA
+                                --Modulo Configuracion
+                                --Maestros
+                                --Catalogo Institucional
+                                --Catalogo Precios
+                                --Buscamos el boton EXPORTAR
+                                --Una vez que se importa el archivo, se descargara un log en el que se menciona que solo cargara
+                                aquelos items que esten agregados al catalogo Institucional
+                        --SEGUNDA MANERA
+                                --Nos fijamos en el boton ESTRUCTURA PARA IMPORTAR, en el que se iondica que columnas iran en la estructura de improtacion que son para los items (133000210003):
+                                AÑO             EJECUTORA               CODIGO GRUPO            CODIGO CLASE                    CODIGO FAMILIA                  CODIGO ITEM                     PRECIO
+                                2025            301501                  13                      30                              0021                            0003                            15.10                           
+
+                                --Seleccionamos toda las filas menos la cabecera yu lo pego en un bloc de notas y lo iumportamos en el boton de la flecha
+
+        NOTA: Mientras no se cuente con Progrmacion multianual se puede eliminar el item
+
+3.- Agregar Sedes
+            ->STEP 1 (AGREGAR SEDE)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Sedes
+                -- Damos en el icono de (+)
+                -- Rellenamos 
+                        -> Descripcion
+                        -> Direccion
+                        -> Referencia
+                        -> Pais
+                        -> Provincia
+                        -> Distrito
+                        -> telefono no es obligatorio 
+
+4.- Insertar Actividades Operativas
+            ->STEP 1 (AGREGAR ITEM)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Actividad Operativas
+                -- Si no hay actividades operativas cargadas, damos click en (GENERAR CONSULTA), 
+        
+            ->STEP 2 (IMPORTAR ACTIVIDAD OPERATIVA)
+                -- Nos vamos en la flecha para arriba para importar y se puede generar de dos manera
+                        --PRIMERA MANERA
+                                -- Exportar desde el CEPLAN 
+                        --SEGUNDA MANERA
+                                --Nos fijamos en el boton ESTRUCTURA PARA IMPORTAR, en el que se indica que columnas iran en la estructura de improtacion para las actividades:
+                                CODIGO POI              NOMBRE DE LA ACTIVIDAD               ESTADO DE LA ACTIVIDAD (A/I)            ACTIVIDAD=1/PROYECTO=2
+                                2025                    13                                   A                                      1                       
+                                --Seleccionamos toda las filas menos la cabecera yu lo pego en un bloc de notas y lo iumportamos en el boton de la flecha
+                        --Una vez que se ingrese le damos en VALIDAR y finalmente en IMPORTAR.
+
+5.- Insertar Centro de Costo
+            ->STEP 1 (AGREGAR ITEM)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Centro de Costos
+                -- Para insertar un cetnro de costo le damos en boton de MAS(+)
+                -- Se despliega un formulario con los siguientes campos:
+                        -- NIVEL
+                        -- CODIGO
+                        -- DESCRIPCION
+                        -- ABREVIATURA
+                        -- SEDE
+                        -- Si es de nivel dos se desplegara le campo CODIGO DE NIVEL ANTERIOR
+
+6.- Catalogo por Centro de Costo
+            ->STEP 1 (AGREGAR CENTOR DE COSTO)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Catalogo Centro de Costos
+                -- Seleccionamos el CENTRO DE COSTO y se desplegara un fomrulario y un listado
+                        -- Al costado del Titulo se desplegara tres botones (Eliminar, Asginacion Indvidual y Asignacion Masiva)
+                        -- Cuando asiganmos de manera individual, podremos filtrarlo y lo selccionaremos, para el centro de costo seleccionado
+                        -- Cuando asignamos de manera masiva, podremos selccionar un conjunto de centro de costos y se agregatran a todos ellos
+
+
+6.- Cadena Programatica
+            ->STEP 1 (AGREGAR CENTOR DE COSTO)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Cadena Programatica
+                -- Cuando no hay nada cargado vamos a GENERAR CONSULTA o dando click en el (+)
+                        -- Y tenemos que tener un excel con todas las metas porpuestas para la progrmacion del CMN 2025-2027
+                        -- Y con ello vamos seleccionando:
+                                -> Categoria Presupuestal (Ejemplo: ACCIONES CENTRALES)
+                                -> Programa (Ejemplo: 9001)
+                                -> Prod/Proy (Ejemplo: 2001621)
+                                -> Act/AI/Obra (Ejemplo: 6000032)
+                                -> Finalidad (Ejemplo: 000000)
+                                -> Cadena Funcional (Ejemplo: FN:03, DIVF:006, GRPF:0010)
+                                -> Departamento, Provincia y Distrito
+                                -> Unidad de medrida (Expediente Tecnico)
+                                -> Descripcion (Ejemplo: Generica)
+
+
+7.- Clasificador de gasto para proyectos
+          ->STEP 1 (AGREGAR CENTOR DE COSTO)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Clasificador por Proyecto
+                -- Cuando ingresemos se nos listara la cadena progrmatica que se registro anteriormente
+                        -- Una vez que seleccione la cadena programática
+                        -- Se melistara el nombre del poryecto sin un listado      
+                                -- Para agregar un clasificador de gasto a un proyecto, le damos lcik en (+)
+                                -- Selecciono una especifica y le doy a guardar.
+
+
+
+8.- Clasificador de gasto para proyectos
+          ->STEP 1 (AGREGAR CENTOR DE COSTO)
+                -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+                -- Seleccionamos el modulo PMBSO SIAF RP
+                -- Seleeccionamos Tablas Maestras
+                -- Seleccionamos Centro de Costo
+                        -- Vamos a dar click en GENERAR CONSULTA y se visualizaran todos los centros de costo 
+                        -- Seleccionamos una meta y e damos en el icono de modificar que se encuentra en la parte 
+                        superior y enla parte inferior podremos ver METAS X CENTRO DE COSTO
+                        -- Seleccionamos el icono de AGREGAR y se abrira un formulario de la meta y su cadena progrmatica
+                        -- Y solo buscamos la meta e insertamos la ff/rb 
+                        -- Ahora para agrgar una actividad a la meta debemos de :
+                                --Seleccionar la meta 
+                                --Seleccionamos el icono de AGREGAR y buscamos la actividad operativa

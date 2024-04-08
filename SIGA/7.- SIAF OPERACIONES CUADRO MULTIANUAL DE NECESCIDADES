@@ -1,0 +1,36 @@
+                                    SIAF OPERACIONES PROGRAMACION DE CUADRO MULTIANUAL DE NECESIDADES
+
+1.- Progrmacion de CMN  
+            -- Vamos al Menu y seleccionamos TECHO PRESUPEUSTAL y despues PRGRMACION DE CMN 
+            -- Y nos vamos al submenu CMN .- BINES SERVICIO Y OBRAS.
+            -- Se desplegara un cuadro con:
+                    --El año
+                    --Fase del CMN
+                    --DESCRIPCION DEL CENTRO DE COSTO (Para poder buscar)
+                    --Como no se visualiza nada se da clik en e icono de MAS (+)
+                    -- Y se desplegara un formulario con los campos:
+                            --Tipo (obligatorio -> Actividad o Proyecto)
+                            --FF/rb (obligatorio -> Selecciona la meta)
+                            --Actividad (obligatorio -> Se selecciona la activida asociada a la meta)
+                            --Dist. Mensual (Si es qiue no, se tiene que seleccionar un mes en el siguiente campo y si es si se bloquea y se reparte en los 12 meses)
+                            --Mes (Solo si dio un NO en Dist Mensual)
+
+                            --En el segundo bloque:
+                                --se slecciona tipo de uso.
+                                --tipo de item 
+                                --descripcion dle item (Para buscar el item que esta en el catalogo)
+                                --Una vez que aparezca el iten en la columna cantidad ponemos el numero y ponemopsgrabar
+                                -- despues de eso nos vamos en la icono lapiz de la parte superior para editar la progrmacion multianual.
+                                    --Y editamos la cantidad en cada año.
+                                --Cuanod es servicio se pone el monto total del por todos los meses al seleccionar el servicio
+
+2.- Asignar centro de costo a usuarios  
+            -- Ingresamos al siguiente links (https://apps.mef.gob.pe/weblanding/#/landing)
+            -- Seleccionamos el modulo PMBSO SIAF RP
+            -- Seleeccionamos Tablas Maestras
+            -- Seleccionamos Centro de Costo
+                --Damos click en GENERAR CONSULTA
+                --Seleccionamos le icono (+) ASIGNAR CENTRO DE COSTO
+                --Se desplegara un formulario con los campos:
+                    -- Usuario
+                    -- Asginacion por centro de cosoto ya qque la otra opcion asigna el usuairo a todos los centor de costo
