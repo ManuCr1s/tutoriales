@@ -1,0 +1,4 @@
+                                    GESTION DE USUARIOS
+
+--CAMBIAR CONTRASEÑA DE USUARIOS    
+    ALTER USER nombre_usuario WITH PASSWORD 'nueva_contraseña';

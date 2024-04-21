@@ -1,0 +1,10 @@
+                                                PASSOS PARA COPIA DE SEGURIDAD Y RESTAURACION DE UN BASE DE DATOS
+
+STEP N°1 .- COPIA DE SEGURIDAD
+    ->METODO 1 (Mediante PSQL -PGDUMP)
+            --Ingresamos a la terminbal de POSTGRES
+            --Con cmd seria entrando al bin de POSTGRES:
+                    --pg_dump -U postgres -W -h localhost prueba > prueba.sql
+            
+            --Para restaurar la Base de Datos es:
+                    --psql -h localhost -p 5432 -U postgres -f prueba.sql nueva1
