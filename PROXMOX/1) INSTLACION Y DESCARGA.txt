@@ -10,27 +10,34 @@
 	STEP N° 2: Nos conectamos por la IP asiganda y su puerto desde un navegador
 		- Actualizamos los paquetes dentro del contenedor PROXMOX, con usuairio y contraseña.
 		- Utilizamos los comandos apt-get update
-		- Utilizamos el comando apt-get dist-upgrade y ponemos y
-		- 
+		- Utilizamos el comando apt-get dist-upgrade y ponemos yes
 	
-	STEP N° 3: Creacion de un cluster con comandos:
-		- pvecm create Cluster (Creacion deun cluster en PROXMOX)
-		- pvecm status (Ver el estado de la maquina virtual)
+	UN cluster es un conjunto de servidores fisicos interconectados en el que se instalo PROXMOX 
+	Nota: Para tener unificados los cluster, tenemos que tener la misma hora y estar en la mimsa red
+	Nota: Para realizar la union no tenemos que tener maquinas virtuales.
+	Nota: Para tener activado la opcion de alta disponibilidad tenemos que tener tres servidores fisicos y unidos a un cluster.
+	STEP N° 3: Creacion de un cluster con comandos, para ello nos vamos a la SHELL del proxmox de la maquina donde se virtualizo el proxmox:
+		- pvecm create Cluster (Creacion de un cluster en PROXMOX)
+		- pvecm status (Ver el estado del cluster)
 		- para conectar otro servidor al cluster.
 			- Nos conectamos mediante ssh al otro servidor 
 			- Y ejecutamos el siguiente comando:
 				-- pvecm add ip_del_primer_servidor_el_genero _el_cluster
 
 	STEP N° 4: Creacion de discos de almacenamiento de fisico a virtuales:
+		-Podemos ver los dispositivos haciendo click en servidor y en la opcion DISK
 		- Hacemos click en el servidor y luego en el Shell, utilizamos los siguientes comandos:
-			-- fdisk -l (Podemos ver todos los discos que tenmos uy sus particiones)
-			-- cfdisk /dev/sdd 
+			--fdisk -l (Podemos ver todos los discos que tenmos uy sus particiones)
+			--cfdisk /dev/sdd 
+			--Ponemos en las opciones CREAR 
+			--y guardamos con write
 		- Hacemos click en Datacenter y luego a STORAGE y nos vamos ADD .
 		- Hacemos click en New -> Y ponemos el cantidad del peso.
 		- Hacemos click en Write -> Y ponemos en yes.
-		
-
 		- Utilizamos el vg-create y pv-create (el segudno crea un volumen y sus particiones y el primero crea un grupo de volumnes)
 			- Con el primero pv-create /dev/sdd1 y se guarda.
 			- Luego para crear un grupo con el comando vg-create Disco500Gv /dev/sdd1 
-	STEP N° 5: 
+
+	STEP N° 5: Luego de eso se añade un nuevo almacenami en el storge un disco en el cluster con el volumne
+		- En el ejemplo de añade del tipo LVM en volume group se selecciona el disco.
+		- ZFS en raid para tener paridad
