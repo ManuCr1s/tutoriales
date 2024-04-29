@@ -2,3 +2,15 @@
 
 --CAMBIAR CONTRASEÑA DE USUARIOS    
     ALTER USER nombre_usuario WITH PASSWORD 'nueva_contraseña';
+
+--PERMISO PARA ESQUEMAS
+    GRANT USAGE ON SCHEMA public,mpv TO nombre_usuario;
+
+--PERMISO DE CONEXION A BASE DE DATOS
+    GRANT CONNECT ON DATABASE nombre_base_de_datos TO  nombre_usuario;
+
+--PERMISO DE LECTURA A UN USUARIOS 
+    GRANT readonly TO nombre_usuario;
+
+--PERMISO DE SELECT A LAS TABLAS DE CIERTOS ESQUEMAS
+    GRANT SELECT ON ALL TABLES IN SCHEMA dbo,public,formulario TO nombre_usuario;

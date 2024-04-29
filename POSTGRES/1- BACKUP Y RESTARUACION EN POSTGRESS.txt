@@ -7,4 +7,4 @@ STEP N°1 .- COPIA DE SEGURIDAD
                     --pg_dump -U postgres -W -h localhost prueba > prueba.sql
             
             --Para restaurar la Base de Datos es:
-                    --psql -h localhost -p 5432 -U postgres -f prueba.sql nueva1
+                    --psql -h localhost -p 5432 -U postgres -f prueba.sql prueba

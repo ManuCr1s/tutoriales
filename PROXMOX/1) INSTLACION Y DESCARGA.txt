@@ -40,4 +40,6 @@
 
 	STEP N° 5: Luego de eso se añade un nuevo almacenami en el storge un disco en el cluster con el volumne
 		- En el ejemplo de añade del tipo LVM en volume group se selecciona el disco.
-		- ZFS en raid para tener paridad
+		- ZFS en raid para tener paridad, nos vamos al shell del servidor seleccionado.
+		- Y escribimos el siguiente comando:
+			-> zpool create -f -o ashift=12 prueba mirror /deb/sda /dev/sdb
