@@ -59,4 +59,22 @@ SALIDA MIKROTIK
 	
 	STEP N°1
 		--
+
+CONVERTIR CON OPENSSL DE CRT A PFX
+
+	STEP N°1
+		-- Ingresamos con el cmd a la carpeta y ponemos el siguiente comendo 
+			openssl pkcs12 -export -in certificate.crt -inkey privatekey.key -out certificate.pfx
+		   donde certificate.crt es el certificado emitido en crt
+			 privatekey.key es el clave del certificado
+			 certificate.pfx es la salida del certificado pfx
+		   
+		-- Tambien se nos pedira ingresar una contraseña que tiene que ser recordada.
+
+	STEP N°2
+		-- Una vez se haya exportado el certificado lo ejecutamos y damos sighuinte y siguiente
+		-- Ingresamos la contraseña ingresada anteriormente
 	
+	STEP N°3
+		-- Despoues copiamos el certificado en servidor tomcat de donde se hace referencia en el archivo 
+		server.xml y tambien cambiamos la contraseña

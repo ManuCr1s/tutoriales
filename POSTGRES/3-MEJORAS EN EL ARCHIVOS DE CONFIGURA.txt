@@ -1,0 +1,15 @@
+MEJORAS EN EL ARCHIVOS DE CONFIGURACION DE POSTGRESS
+
+-- max_connections = 100	(HAY QUE PONER A 1000).
+POST GRES 9 HIGH PERFORMANCE 
+averiguar autovaccum limpieaza de datos hsitorticos 
+
+Parametros a modificar			Por defecto
+* max_connections			100				300
+* autovacuum_max_workers		3				-
+* shared_buffers			128				40% de la memoria fisica (1024 o 512)
+* work_mem
+* autovacuum_work_mem
+* maintenance_work_mem
+* temp_buffers
+* effective_cache_size
