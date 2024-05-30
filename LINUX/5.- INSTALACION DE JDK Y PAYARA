@@ -1,0 +1,8 @@
+                        Configuracion de Payara y OpenJDK
+
+--STEP N° 1.- Instalacion de JAVA, se ejecuta el siguiente comando:
+    sudo apt install openjdk-8-jdk
+
+--STEP N° 2.- Para comprobar que java se instalo correctamente, ejecutamos el 
+              siguiente comando:
+    java -version

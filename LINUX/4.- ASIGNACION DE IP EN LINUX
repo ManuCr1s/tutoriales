@@ -1,0 +1,33 @@
+                            Configuraciones de Red
+
+Antes de linux 17 la configuracion se realizaba en /ETC/NETWORK/INTERFACES
+pero ahora gracias a la instalciuon de netplan se realiza en: /etc/netplan.
+
+-- STEP N° 1 (Listar las interfaces de Red)
+                ip a  o ip addr.
+    ->Identificar, la tarjeta de red a selccionar.
+
+--STEP N° 2 (Realizar un copia de seguridad del archivo de NETPLAN) 
+                sudo cp -p /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config-original.yaml
+
+--SETP N° 3 (Editar el archivo de configuracion del 00-installer-config.yaml)
+                sudo nano /etc/netplan/00-installer-config.yaml
+
+--STEP N° 4 (Parametros de configuracion)
+        -> Se empieza siempre con la version y el render
+        -> en RENDERER (networkd) por ser de consola.
+        Ejemplo:
+        
+        network:
+          version: 2
+          renderer: networkd
+          ethernets:
+            enp0s18:
+              addresses: [172.16.10.30/24]
+              gateway4: 172.16.10.1
+              nameservers:
+                addresses: [8.8.8.8, 1.1.1.1]
+
+        -> Ejecutamos el comando:
+        netplan generate(No realiza cambios, solo comprueba su sintaxys).
+        netplan apply(Sereinicia el serevico)

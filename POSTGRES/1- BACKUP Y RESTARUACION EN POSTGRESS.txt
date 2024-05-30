@@ -8,3 +8,12 @@ STEP N°1 .- COPIA DE SEGURIDAD
             
             --Para restaurar la Base de Datos es:
                     --psql -h localhost -p 5432 -U postgres -f prueba.sql prueba
+
+
+pg_dump --host localhost --port 5432 --user "postgres" --format custom --file "E:\BACKUP_CEROPAPEL\respaldo.backup" "ext_prd_workflow" 
+pg_dump -U postgres -W -h localhost ext_prd_workflow > "E:\SQL_BACKUP_CEROPAPEL\respaldo.sql" 
+
+@echo off
+set PGPASSWORD="Pasco2024@"
+set FECHA=%date:~0,2%"_"%date:~4,2%"_"%date:~6,4%"_"%time:~0,2%"_"%time:~2,2%
+pg_dump -U postgres -W -h localhost ext_prd_workflow > "E:\SQL_BACKUP_CEROPAPEL\pgd_%FECHA%.sql" 

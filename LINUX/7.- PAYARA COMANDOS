@@ -1,0 +1,6 @@
+                        COMANDOS DE PAYARA
+1.- INICIAR EL SERVIDOR DE PAYARA.- Para activar el servidor Payara utilizamos el comando pero antes de ello nos dirigimos al fichero (PAYARA/BIN):
+                ./asadmin start-domain
+
+2.- INICIAR EL SERVIDOR DE PAYARA.- Para desactivar el servidor Payara utilizamos el comando pero antes de ello nos dirigimos al fichero (PAYARA/BIN):
+                ./asadmin stop-domain
