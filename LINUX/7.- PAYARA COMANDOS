@@ -4,3 +4,9 @@
 
 2.- INICIAR EL SERVIDOR DE PAYARA.- Para desactivar el servidor Payara utilizamos el comando pero antes de ello nos dirigimos al fichero (PAYARA/BIN):
                 ./asadmin stop-domain
+
+3.- HABILITAR LA ADMINISTRACION DE CONSOLA..- Para activar el servidor Payara utilizamos el comando pero antes de ello nos dirigimos al fichero (PAYARA/BIN):
+                ./asadmin enable-secure-admin
+
+4.- CAMBIAR LA CONTRASEÑA DE LA ADMINISTRACION DE CONSOLA..- Para cambiar contraseña Payara utilizamos el comando pero antes de ello nos dirigimos al fichero (PAYARA/BIN):
+                ./asadmin change-admin-password

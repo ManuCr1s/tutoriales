@@ -9,3 +9,20 @@
 					-- Despues de ejecutado nos pedira que ingresemos parametros:
 							-- En el primero es 2 y enter
 							-- En el segundo es el DOMINIO (pladig.munipasco.gob.pe)
+
+
+--STEP N° 1.- Para instalar el SSL descargamos el certibot para windows en etse (APAGRA EL XAMP ANTES DE TODO)
+	link https://dev.to/subburekhandar/certbot-installation-procedure-for-windows-169l
+
+--STEP N° 2 .- Despues de instalar nos guiamos de la configuracion de CERTIBOT para APACHE y WINDOWS.
+			   Si es la primera instalacion ponemos: certbot certonly --standalone
+			   Sino tenderemos que poner: certbot certonly  --cert-name sistematransporte.munipasco.gob.pe --key-type rsa
+			   Ponemos 2
+			   Y el propio sistema nos generara los certificados que son 5 items en la carpeta ya especificada
+
+NOTA: Podemos guardar eso en el servidor Tal y como esta.
+NOTA: Si no lo podemos convertir de pem a crt asi.
+openssl x509 -in certificate.pem -out certificate.crt
+
+NOTA: Si no lo podemos convertir de pem a key asi.
+openssl rsa -in private_key.pem -out private_key.key
