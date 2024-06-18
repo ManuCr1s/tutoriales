@@ -1,0 +1,8 @@
+                                PASOS PARA MIGRAR ARCHIVOS DE WINDOWS A LINUX
+PASO N° 1.- Tener como variables de entorno el PSCP de PUTTY:
+            (Nombre de Variable putty PSCP) -> (Valor C:\Program Files\PuTTY).
+
+PASO N° 2.- Ejecutar el siguiente comando para el envio.
+            pscp c:\descargas\datos.txt administrador@172.16.10.6:/home/administrador/down
+
+NOTA: Antes de enviar a la carpeta designada, debemos tener los permiso de usuario 777 con chmod
