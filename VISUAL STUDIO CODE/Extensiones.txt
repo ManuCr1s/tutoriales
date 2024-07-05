@@ -8,3 +8,6 @@
 -- EXTENSIONES GENERALES
     --> Para comentar .- hacemos alt + a
         Pero lo podemos configurar en ARCHIVO -> PREFERENCIAS -> TAAJO DE TECLADO -> OCPION -> TOGGLEW BLOCK COMMENT
+
+
+        
