@@ -1,0 +1,10 @@
+                                                        EXTENSIONES PARA PROGRAMACION
+-- EXTENSIONES PARA LARAVEL
+    --> LARAVEL BLADE FORMATTER.- Cuando copiamos de otra pagina ayuda con el espaciado.
+    --> LARAVEL BLADE SNIPPETS.- Recomienda opciones de codigo para cuando se esta editando.
+    --> LARAVEL GOTO VIEW.- Nos permite dirigirnos a las vistas mencionadas en los bloues de codigo.
+    --> LARAVEL SNIPPETS.- Igual que la anterior extension pero para todo el codigo. 
+    --> PHP INTELEPHENSE.- Para el codigo php. de BEN MEWBURN 
+-- EXTENSIONES GENERALES
+    --> Para comentar .- hacemos alt + a
+        Pero lo podemos configurar en ARCHIVO -> PREFERENCIAS -> TAAJO DE TECLADO -> OCPION -> TOGGLEW BLOCK COMMENT
