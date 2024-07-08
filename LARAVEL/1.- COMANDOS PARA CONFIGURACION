@@ -7,10 +7,17 @@
                 Derivados -> php artisan about --only=cache (environment).
 
             --> PHP ARTISAN ENV:ENCRYPT.- Permite cifrar el archivo .env, la clave del cifrado aparece al terminar el comando.
+                Comando -> php artisan env:encrypt
                 Derivados -> php artisan env:encrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF
                 Nota: Guardar la key para descifrar despues.
 
             --> PHP ARTISAN ENV:DECRYPT.- Permite descifrar el arcvhio .emv, pasando la clave o solo con el comendo.
                 Derivados -> php artisan env:decrypt --key=3UVsEgGVK36XN82KKeyLFMhvosbZN1aF
+
+            --> PHP ARTISAN CONFIG:CACHE.- Comando para aumnetar la velocidad de la aplicacion, ya que almacena todos los archivos de configuracion en un solo archivo no debe ejecutarse en local.
+                Comando -> php artisan config:cache
+                Derivados -> php artisan config:clear
+
+            --> ARCHIVO DE CONFIG/APP.PHP Y .ENV.- Tener en cuenta la variable APP_DEBUG y el valor de DEBUG, en local deben tener true y produccion false. 
 
 2.- COMANDOS PARA
