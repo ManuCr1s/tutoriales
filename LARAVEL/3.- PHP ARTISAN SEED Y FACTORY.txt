@@ -1,0 +1,28 @@
+                                                                COMANDO PARA INSERTAR DATA CON SEEDERS
+--> STEP N° 1.- Ingresar datos a travez de los seeder, por ello trabajaremos con el comando.
+        -- php artisan migrate:fresh : Migrar las tablas.
+        -- php artisan db:seeder : Ejecutar el seeder.
+
+--> STEP N° 2.- Se modifica el archivo, seed DatabaseSeeder.php y se trabaja como en el tinker;
+        $curso = new Course;
+        $curso->name = 'Manuel'; Ingresar valor a propiedades.
+        $curso->saves(); Ejecutar metodos.
+
+--> STEP N° 3.- Para unir el comando migrate y db:seed utilizamos lo sieguiente.
+        php artisan migrate:fresh --seed
+
+
+                                                                COMANDOS PARA INSERTAR DATOS CON FACTORYES
+--> STEP N° 1.- Creacion de los factorys.
+        -- php artisan make:factory CourseFactory --model=course
+
+--> STEP N° 2 .- Despues de crear el factory lo que hacemos es especificar el MODELO y las columnas.
+        -- En el objeto que retorne (return).
+                -- 'nombre' => $this->faker->sentence();
+
+--> STEP N° 3.- Se puede crear un Seeder, es opcional o lo puede llamar desde DatabaseSeeder.
+        -- php artisan make:seeder CourseSeeder 
+        -- Para invocar es:
+                - Agregar el modelo use App\Models\Course;
+                - Course->factory(100)->create();
+                - $this->call(CourseSeeder::class);

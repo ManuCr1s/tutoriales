@@ -1,0 +1,17 @@
+                                                TINKER PARA UTILIZAR BASE DE DATOS COMO OBJETOS
+--> STEP N° 1.- Comando para visualizar TINKER en la CONSOLA.
+    php artisan tinker
+
+--> STEP N° 2.- Comando para utilizar el modelo.
+    use App\Models\User;
+
+--> STEP N° 3.- Instanciamos la clase para el objeto.
+    $usuario = new User();
+
+--> STEP N° 4.- Utilizamos las propiedades y los metodos de la clase y su herencia.
+    $usuario->nombre = 'Manuel';
+
+--> STEP N° 5.- Para guardar los elementos ustilizamos el metodo SAVE.
+    $usuario->save();
+
+NOTA: Para eliminar un elemento del array. UNSET($curso['entrada']).
