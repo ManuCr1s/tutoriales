@@ -1,0 +1,7 @@
+                                                                    RUTAS DE LA APLICACION 
+
+-->Declaracion de una ruta por convencion y por controlador.
+    -->Route::get('/',function(){
+        return "Cadena de texto";
+    });
+    -->Route::get('/',[CourseController::class,'index']);
