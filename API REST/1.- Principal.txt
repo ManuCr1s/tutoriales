@@ -1,0 +1,25 @@
+                                CONFIGURACIONES PREVIAS PARA LA CREACION DE API
+
+Paso N° 1: Tener un proyecto laravel: (composer create-project laravel/laravel name_project)
+Paso N° 2: Crear un dominio local: (modificar en el system y vhodt de apache)
+Paso N° 3: Entender que el concepto de END-POINT, es el de rutas y que en un proyecto Laravel tenemos
+           4 archivos para las rutas, entre ellos api y web pero la diferencia entre estos archivos
+           es el MIDDLEWARE(ya que el de la web el MIDDLEWARE pide un tocken CSRF, y el de la API no)
+Paso N° 4: Crear un controller en otra carpeta distinta al del APP\CONTROLLER ya que se va a visualizar
+           guias con la otra ruta.
+                COMANDO
+                    php artisan make:controller Api\RegisterController
+Paso N° 5: Crear un ruta para realizar las pruebas y utlizar el POSTMAN, en la ruta llamaremos a un metodo del controlador.
+Paso N° 6: Validar el contenido utilizando el metodo validate.
+                COMANDO
+                    Request $Request 
+                    $request->validate([
+                        'name'=>'required|string|max:255',
+                        'email'=>'required|string|email|max:255|unique:user',
+                        'password'=>'required|string|min:8|confirmed' 
+                    ]);
+                    $user = User::create($request->all());
+                    return response($user,200)
+PASO N° 7: Creamos un Workspace y dentro de ese tablero agrergamos un nueva pestaña y nos vamos a BODY, e ingresamos
+           los valores para los campos, tambien nos vamos a HEADERS e agregamos, el valor, accept ->application-json
+           
