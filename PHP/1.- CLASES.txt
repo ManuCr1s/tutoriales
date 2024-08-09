@@ -1,0 +1,9 @@
+                                                        TIPO DE CLASES
+1.- CLASES INSTANCIABLES:
+    Es un tipo de clase que puede ser heredada y tambien instanciable para los objetos
+2.- CLASES ABSTRACTAS
+    Es un tipo de clase que solo sirve de modelo para otra pero no puede ser instanciada.
+3.- CLASES HEREDADAS
+    Es una clases cuyo objeto guarda relacion con las propiedades y metodos de otra clase.
+4.- CLASES FINALES
+    Es una clase que no puede ser heredada pero si puede ser instanciada.

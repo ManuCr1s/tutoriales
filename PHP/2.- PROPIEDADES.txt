@@ -1,0 +1,14 @@
+                                                                PROPIEDADES DE UNA CLASES
+Las propiedades de un clase pueden ser accedidades dependiendo de la visibiliadad o seguridad de la porpiedad o del metodo.
+- Protected.- Solo puede ser accedida desde la clase que lo inicio y laas que lo heredaron
+- Private.- Solo puede ser accedida desde la clase que lo inicio
+- Public.- Puede ser accedida desde cualquier parte del codigo.
+
+Las propidades estaticas son propiedad de la clase mas no del objeto que las instancia, se comparte con todas las instancias de la clase.
+se puede utilizar de tresformas:
+-Datos globales de una clase.
+-Constantes
+-Metodos Estaticos
+se aceden a traves del (::) siguiente operador, y laplabra resrvada(self o parent).
+
+Los metdos abstratos solo se usan para la definiciion y no la implemntacion de los algoritmos 
