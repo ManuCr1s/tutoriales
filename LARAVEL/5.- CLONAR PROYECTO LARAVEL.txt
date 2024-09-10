@@ -1,0 +1,12 @@
+                                                        PASOS PARA CLONAR UN PROYECTO LARAVEL
+->  STEP N° 1 .- Instalar Dependencias del proyecto.
+    composer install
+
+->  STEP N° 2 .- Creacion de una base de datos
+
+->  STEP N° 3 .- Crear el archivo .env
+
+->  STEP N° 4.- Generar una clave de aplicacion 
+    php artisan key:generate
+
+->  STEP N° 5 .- Reaizar las migraciones
