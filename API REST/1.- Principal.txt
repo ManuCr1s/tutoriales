@@ -9,7 +9,7 @@ Paso N° 4: Crear un controller en otra carpeta distinta al del APP\CONTROLLER y
            guias con la otra ruta.
                 COMANDO
                     php artisan make:controller Api\RegisterController
-Paso N° 5: Crear un ruta para realizar las pruebas y utlizar el POSTMAN, en la ruta llamaremos a un metodo del controlador.
+Paso N° 5: Crear un ruta para realizar las pruebas (ROUTEPROVIDER SE ENCUNRTA EL PREFIJO DE LA RUTA EN UNA API)y utlizar el POSTMAN, en la ruta llamaremos a un metodo del controlador.
 Paso N° 6: Validar el contenido utilizando el metodo validate.
                 COMANDO
                     Request $Request 
@@ -23,3 +23,12 @@ Paso N° 6: Validar el contenido utilizando el metodo validate.
 PASO N° 7: Creamos un Workspace y dentro de ese tablero agrergamos un nueva pestaña y nos vamos a BODY, e ingresamos
            los valores para los campos, tambien nos vamos a HEADERS e agregamos, el valor, accept ->application-json
            
+PASO N° 8: Se puede crear un endpoint para cada uno los metodos del controlador con los siguientes comandos:
+            ->Primer Comando
+                php artisan make:controller Api\PersonController --api --model=Person
+
+            ->Segundo Comando (En el archivo api)
+                Route::apiResource('personas',PersonController)->names('api.v1.personas');
+
+PASO N° 9: Dar logica a cada uno de los metodos del controlador.
+            ->
