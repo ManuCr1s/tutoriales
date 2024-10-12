@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .text-red{
+            color: red;
+        }
+        .text-blue{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
-       <template-saludo v-bind:saludo="'Hola mundo'">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odit facere sunt ipsam consectetur facilis nihil libero. Totam recusandae possimus quasi illum? Cumque, repellat non. Error officia dolorem aliquid adipisci.
-       </template-saludo>
+        <button @click="active = !active">
+            <span v-if="active">Activado</span>
+            <span v-else>Desactivado</span>
+        </button>
+        <p v-bind:class="active?'text-'+color:'text-'+color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse recusandae corrupti deserunt quae dolorem fugiat tempora, assumenda in repellendus, labore est, earum consectetur quam quibusdam ipsam. Distinctio, dolores nihil?</p> 
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="vue/10-slots.js"></script>
-    <script>
-        app.mount('#app');
-    </script>
-</body> 
+    <script src="vue/5-bind.js"></script>
+</body>
 </html>
