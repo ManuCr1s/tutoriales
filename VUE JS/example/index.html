@@ -7,11 +7,14 @@
 </head>
 <body>
     <div id="app">
-        <button v-on:click="decrement()">-</button>
-        {{count}}
-        <button v-on:click="increment()">+</button>
+       <template-saludo v-bind:saludo="'Hola mundo'">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odit facere sunt ipsam consectetur facilis nihil libero. Totam recusandae possimus quasi illum? Cumque, repellat non. Error officia dolorem aliquid adipisci.
+       </template-saludo>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="vue/event.js"></script>
-</body>
+    <script src="vue/10-slots.js"></script>
+    <script>
+        app.mount('#app');
+    </script>
+</body> 
 </html>

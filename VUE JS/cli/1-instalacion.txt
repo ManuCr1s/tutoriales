@@ -1,0 +1,20 @@
+                                    PASOS PARA INSTALAR VUE
+--STEP 1
+    ->Instalar node js
+    ->Instalar vue js
+        npm install -g @vue/cli
+
+    ->Para verificar que todo este instaldo ejecutamos el comando
+        vue --version
+    ->Para problemas en windows
+        Ejecutar los comandos:
+        1 Get-ExecutionPolicy
+        2 Set-ExecutionPolicy Unrestricted 
+--STEP 2
+
+    ->Para crear el proyecto utilizamos el comando:
+        vue create nombreproyecto
+
+    ->Ingresamos al proyecto y utilizamos el comando:
+        npm run serve
+        

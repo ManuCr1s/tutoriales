@@ -1,0 +1,4 @@
+                                Se agrega la libreria
+Con el siguiente comando:
+    npm install vue-router@4
+    vue add router
